@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.HBox?>
+
+<fx:root alignment="CENTER_LEFT" spacing="2.0" type="HBox" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Label fx:id="noteLabel" />
+      <Label fx:id="gstSatusLabel" alignment="TOP_CENTER" contentDisplay="TOP" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="12.0" prefWidth="12.0" />
+      <Label fx:id="transactionTypeLabel" alignment="TOP_CENTER" contentDisplay="TOP" layoutX="173.0" layoutY="10.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="12.0" prefWidth="12.0" />
+      <Label fx:id="descriptionLabel" alignment="TOP_CENTER" contentDisplay="TOP" layoutX="187.0" layoutY="10.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="12.0" prefWidth="12.0" />
+   </children>
+</fx:root>

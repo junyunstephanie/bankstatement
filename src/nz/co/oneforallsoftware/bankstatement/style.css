@@ -1,0 +1,169 @@
+.root{
+    -menuBar-background-color: linear-gradient(#ffffff 0%, #e0e5f5 33%);
+    -toolbar-background-color: linear-gradient(#e0e5f5 0%, #e0e5f5 67%, #ffffff 100%);
+    -main-pane-background-color: rgb(236, 240, 250);
+    -tab-header-background-color: rgb(209, 224, 239);
+}
+
+.split-pane-divider {
+    -fx-padding: 0 5 0 5 ;
+    -fx-background-color: -main-pane-background-color;
+    -fx-background-insets: 0;
+}
+
+.split-pane{
+    -fx-background-color: -main-pane-background-color;
+    -fx-border-color: -main-pane-background-color;
+    -fx-padding: 0;
+}
+
+.text-input:disabled{
+    -fx-opacity: 1.0;
+}
+
+.text-input.error {
+    -fx-focus-color: #d35244;
+    -fx-faint-focus-color: #d3524422;
+
+    -fx-highlight-fill: -fx-accent;
+    -fx-highlight-text-fill: white;
+    -fx-background-color:
+            -fx-focus-color,
+            -fx-control-inner-background,
+            -fx-faint-focus-color,
+            linear-gradient(from 0px 0px to 0px 5px, derive(-fx-control-inner-background, -9%), -fx-control-inner-background);
+    -fx-background-insets: -0.2, 1, -1.4, 3;
+    -fx-background-radius: 3, 2, 4, 0;
+    -fx-prompt-text-fill: transparent;
+}
+
+.text-input.no_border {
+    -fx-focus-color: transparent;
+    -fx-faint-focus-color: transparent;
+
+    -fx-highlight-fill: -fx-accent;
+    -fx-highlight-text-fill: black;
+    -fx-background-color:
+            white,
+            white,
+            white,
+            white;
+    -fx-background-insets:0, 0, 0, 0;
+    -fx-background-radius: 0, 0, 0, 0;
+    -fx-border-width: 0 0 1 0;
+    -fx-border-color: transparent transparent black transparent;
+    -fx-background-radius: 0;
+    -fx-prompt-text-fill: lightgray;
+}
+
+.text-input {
+
+    -fx-prompt-text-fill: lightgray;
+
+
+}
+
+.text-field {
+    -fx-prompt-text-fill: lightgray;
+}
+
+.dialog-pane {
+    -fx-background-color: -main-pane-background-color;
+}
+
+.dialog-pane:header .header-panel {
+    -fx-background-color: -main-pane-background-color;
+}
+
+.table-row-cell:empty {
+    -fx-background-color: white;
+}
+
+.table-row-cell:empty .table-cell {
+    -fx-border-width: 0px;
+}
+
+.table-row-cell:empty:odd, .table-row-cell:empty:even {
+    -fx-background-color: white;
+}
+
+.table-view .column-header .label{
+    -fx-text-alignment: center;
+}
+
+.table-view .column-header.holiday .label{
+    -fx-text-alignment: center;
+    -fx-text-fill: red;
+}
+
+.combo-box-base {
+    -fx-background-color:  -fx-shadow-highlight-color, -fx-outer-border, -fx-inner-border, white;
+    -fx-background-insets: 0 0 -1 0, 0, 1, 2;
+    -fx-background-radius: 3px, 3px, 2px, 1px;
+}
+
+.combo-box-base:focused {
+    -fx-background-color: -fx-focus-color, -fx-outer-border, -fx-inner-border, white;
+    -fx-background-radius: 6.4, 4, 5, 3;
+    -fx-background-insets: -1.4, 0, 1, 2;
+}
+
+.tab-pane *.tab-header-background {
+    -fx-background-color: -tab-header-background-color, -tab-header-background-color, -tab-header-background-color;
+
+    -fx-border-radius: 10 10 0 0;
+    -fx-border-insets: 0 0 0 0;
+    -fx-background-radius: 10 10 0 0;
+    -fx-background-insets: 0 0 0 0;
+    -fx-padding: 0;
+}
+.tab-pane > .tab-header-area {
+    -fx-padding: 0 0 0 0;
+}
+
+.tab-pane > .tab-header-area > .headers-region{
+    -fx-padding: 0 0 0 0;
+}
+.tab-pane > .tab-header-area > .headers-region > .tab {
+    -fx-background-color: -tab-header-background-color, -tab-header-background-color, -tab-header-background-color;
+    -tab-color: -tab-header-background-color;
+    -fx-border-color: darkgray;
+    -fx-border-radius: 10 0 0 0;
+    -fx-border-width: 1 1 0 1;
+    -fx-background-radius: 10 0 0 0;
+    -fx-background-insets: 0, 0, 0 ;
+}
+
+.tab-pane > .tab-header-area > .headers-region > .tab:selected {
+    -fx-background-color: white, white, white;
+    -tab-color: white;
+    -fx-border-color: darkgrey;
+    -fx-border-radius: 10 0 0 0;
+    -fx-border-width: 1 1 0 1;
+    -fx-background-radius: 10 0 0 0;
+    -fx-background-insets: 0, 0, 0 ;
+}
+
+.tab-pane:focused > .tab-header-area > .headers-region > .tab:selected .focus-indicator {
+    -fx-border-radius: 10 0 0 0;
+    -fx-border-width: 0 0 0 0;
+    -fx-background-radius: 10 0 0 0;
+}
+
+.scroll-pane > .viewport{
+    -fx-background-color: transparent;
+}
+
+.warning .label{
+    -fx-text-fill: red;
+}
+
+#warning-menu .label{
+    -fx-text-fill: red;
+}
+
+.warning-menu .menu .label{
+    -fx-text-fill: red;
+}
+
+

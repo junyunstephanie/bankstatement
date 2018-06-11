@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<fx:root type="BorderPane" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1">
+   <center>
+      <SplitPane dividerPositions="0.1" prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <items>
+            <BorderPane maxWidth="300.0" minWidth="150.0" prefWidth="200.0" style="-fx-background-color: white;">
+               <center>
+                  <ScrollPane fx:id="thumbnailScrollPane" fitToHeight="true" fitToWidth="true" style="-fx-background-color: white;" styleClass="edge-to-edge" BorderPane.alignment="CENTER">
+                     <content>
+                        <VBox alignment="TOP_CENTER" style="-fx-background-color: white;">
+                           <children>
+                              <VBox fx:id="thumbnailBox" alignment="TOP_CENTER" fillWidth="false" spacing="10.0" style="-fx-background-color: white;">
+                                 <padding>
+                                    <Insets top="10.0" />
+                                 </padding>
+                              </VBox>
+                           </children>
+                        </VBox>
+                     </content>
+                  </ScrollPane>
+               </center>
+            </BorderPane>
+            <BorderPane prefHeight="200.0" prefWidth="200.0">
+               <center>
+                  <ScrollPane fitToHeight="true" fitToWidth="true" style="-fx-background-color: white;" styleClass="edge-to-edge" BorderPane.alignment="CENTER">
+                     <content>
+                        <HBox fx:id="pdfPageImgBox" alignment="TOP_CENTER" fillHeight="false" prefHeight="100.0" prefWidth="200.0" style="-fx-background-color: white;">
+                           <children>
+                              <AnchorPane fx:id="pdfPageAnchorPane" style="-fx-border-color: black; -fx-border-width: 1;" visible="false">
+                                 <children>
+                                    <ImageView fx:id="pdfPageImgView" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+                                 </children>
+                              </AnchorPane>
+                           </children>
+                        </HBox>
+                     </content>
+                  </ScrollPane>
+               </center>
+            </BorderPane>
+         </items>
+      </SplitPane>
+   </center>
+</fx:root>

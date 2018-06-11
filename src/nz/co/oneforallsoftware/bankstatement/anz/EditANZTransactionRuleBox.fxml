@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<fx:root type="VBox" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1">
+    <children>
+        <HBox alignment="TOP_RIGHT">
+            <children>
+                <Hyperlink fx:id="helpLink" onAction="#showHelp" text="Help (Press F1)" />
+            </children>
+        </HBox>
+        <HBox alignment="TOP_CENTER">
+            <children>
+                <Label fx:id="titleLabel" text="Label">
+                    <font>
+                        <Font size="14.0" />
+                    </font>
+                </Label>
+            </children>
+        </HBox>
+        <VBox spacing="5.0">
+            <children>
+                <HBox alignment="CENTER_LEFT" spacing="5.0">
+                    <children>
+                        <CheckBox fx:id="transactionTypeCheckBox" mnemonicParsing="false" text="ANZ Transaction Type" HBox.hgrow="ALWAYS" />
+                        <ComboBox fx:id="transactionTypeComboBox" prefWidth="350.0" HBox.hgrow="ALWAYS" />
+                    </children>
+                    <padding>
+                        <Insets left="10.0" right="10.0" top="10.0" />
+                    </padding>
+                </HBox>
+                <HBox>
+                    <children>
+                        <CheckBox fx:id="thirdPartyCheckBox" mnemonicParsing="false" text="Third Party (Payee/Payer)">
+                            <padding>
+                                <Insets top="5.0" />
+                            </padding>
+                        </CheckBox>
+                    </children>
+                    <padding>
+                        <Insets left="10.0" right="10.0" top="15.0" />
+                    </padding>
+                </HBox>
+                <HBox spacing="5.0">
+                    <padding>
+                        <Insets left="30.0" top="5.0" />
+                    </padding>
+                    <children>
+                        <ComboBox fx:id="thirdPartyOptionBox" prefWidth="150.0" />
+                        <TextField fx:id="thirdPartyField" prefWidth="400.0" />
+                    </children>
+                </HBox>
+                <HBox>
+                    <children>
+                        <CheckBox fx:id="particularsCheckBox" mnemonicParsing="false" text="Particulars">
+                            <padding>
+                                <Insets top="5.0" />
+                            </padding>
+                        </CheckBox>
+                    </children>
+                    <padding>
+                        <Insets left="10.0" right="10.0" top="15.0" />
+                    </padding>
+                </HBox>
+                <HBox spacing="5.0">
+                    <padding>
+                        <Insets left="30.0" top="5.0" />
+                    </padding>
+                    <children>
+                        <ComboBox fx:id="particularsOptionBox" prefWidth="150.0" />
+                        <TextField fx:id="particularsField" prefWidth="400.0" />
+                    </children>
+                </HBox>
+                <HBox layoutX="10.0" layoutY="122.0">
+                    <children>
+                        <CheckBox fx:id="codeCheckBox" mnemonicParsing="false" text="Code">
+                            <padding>
+                                <Insets top="5.0" />
+                            </padding>
+                        </CheckBox>
+                    </children>
+                    <padding>
+                        <Insets left="10.0" right="10.0" top="15.0" />
+                    </padding>
+                </HBox>
+                <HBox layoutX="10.0" layoutY="163.0" spacing="5.0">
+                    <padding>
+                        <Insets left="30.0" top="5.0" />
+                    </padding>
+                    <children>
+                        <ComboBox fx:id="codeOptionBox" prefWidth="150.0" />
+                        <TextField fx:id="codeField" prefWidth="400.0" />
+                    </children>
+                </HBox>
+                <HBox layoutX="10.0" layoutY="196.0">
+                    <children>
+                        <CheckBox fx:id="referenceCheckBox" mnemonicParsing="false" text="Reference">
+                            <padding>
+                                <Insets top="5.0" />
+                            </padding>
+                        </CheckBox>
+                    </children>
+                    <padding>
+                        <Insets left="10.0" right="10.0" top="15.0" />
+                    </padding>
+                </HBox>
+                <HBox layoutX="10.0" layoutY="237.0" spacing="5.0">
+                    <padding>
+                        <Insets left="30.0" top="5.0" />
+                    </padding>
+                    <children>
+                        <ComboBox fx:id="referenceOptionBox" prefWidth="150.0" />
+                        <TextField fx:id="referenceField" prefWidth="400.0" />
+                    </children>
+                </HBox>
+            </children>
+        </VBox>
+        <HBox alignment="CENTER_LEFT" spacing="5.0">
+            <children>
+                <Label text="Transaction Note" />
+                <TextField fx:id="noteField" prefWidth="480.0" />
+            </children>
+            <padding>
+                <Insets top="25.0" />
+            </padding>
+        </HBox>
+        <HBox>
+            <padding>
+                <Insets top="10.0" />
+            </padding>
+            <children>
+                <CheckBox fx:id="gstCheckBox" mnemonicParsing="false" text="GST Included" />
+            </children>
+        </HBox>
+    </children>
+    <padding>
+        <Insets bottom="10.0" left="10.0" right="20.0" />
+    </padding>
+</fx:root>

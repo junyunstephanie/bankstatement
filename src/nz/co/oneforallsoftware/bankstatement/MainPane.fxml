@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<BorderPane prefHeight="768.0" prefWidth="1024.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="nz.co.oneforallsoftware.bankstatement.MainPane">
+   <top>
+      <VBox BorderPane.alignment="CENTER">
+         <children>
+            <BorderPane maxHeight="-Infinity" minHeight="-Infinity" style="-fx-background-color: -toolbar-background-color; -fx-border-color: darkgray; -fx-border-width: 0 0 1 0;">
+               <left>
+                  <HBox alignment="CENTER_LEFT" spacing="10.0" BorderPane.alignment="CENTER">
+                     <children>
+                        <BorderPane fx:id="openFileImgPane">
+                           <center>
+                              <ImageView fx:id="openFileImgView" fitHeight="24.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true" BorderPane.alignment="CENTER" />
+                           </center>
+                           <padding>
+                              <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                           </padding>
+                        </BorderPane>
+                        <BorderPane fx:id="saveFileImgPane" layoutX="20.0" layoutY="15.0">
+                           <center>
+                              <ImageView fx:id="saveFileImgView" fitHeight="24.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true" BorderPane.alignment="CENTER" />
+                           </center>
+                           <padding>
+                              <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                           </padding>
+                        </BorderPane>
+                        <BorderPane fx:id="settingImgPane" layoutX="58.0" layoutY="15.0">
+                           <center>
+                              <ImageView fx:id="settingImgView" fitHeight="24.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true" BorderPane.alignment="CENTER" />
+                           </center>
+                           <padding>
+                              <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                           </padding>
+                        </BorderPane>
+                     </children>
+                     <padding>
+                        <Insets bottom="5.0" left="10.0" top="5.0" />
+                     </padding>
+                  </HBox>
+               </left>
+               <right>
+                  <HBox alignment="CENTER_RIGHT" prefWidth="200.0" BorderPane.alignment="CENTER">
+                     <padding>
+                        <Insets right="10.0" />
+                     </padding>
+                     <children>
+                        <ComboBox fx:id="zoomRateBox" nodeOrientation="LEFT_TO_RIGHT" prefWidth="80.0">
+                           <HBox.margin>
+                              <Insets />
+                           </HBox.margin>
+                        </ComboBox>
+                     </children>
+                  </HBox>
+               </right></BorderPane>
+         </children>
+      </VBox>
+   </top>
+   <center>
+      <BorderPane fx:id="mainBorderPane" BorderPane.alignment="CENTER" />
+   </center>
+</BorderPane>
